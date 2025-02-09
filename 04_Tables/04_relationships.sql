@@ -59,7 +59,7 @@ CREATE TABLE users_languages(
     language_id int,
     FOREIGN KEY(user_id) REFERENCES users(user_id),
     FOREIGN KEY(language_id) REFERENCES languages(language_id),
-    UNIQUE (user_id, language_id)
+    UNIQUE (user_id, language_id)    --Que la tupla sea unica. No tiene sentido tener repetido que x sabe el lenguaje y.
 );
 
 /*
